@@ -82,26 +82,34 @@
       so that its behavior is closer to the real fabric.
     </p>
 
-    <p class="text-size">In the first type of cloth, we change to half the maximum length of the bending spring for
+    <p class="text-size">In <a
+        href="https://drive.google.com/file/d/1ZIzJeBzKTjmFjOtzkrg6kgVa5ld0dTi9/view?usp=sharing">the
+        first type of cloth</a>, we change to half the maximum length of the bending spring for
       every 6-point mass in height and width directions. In contrast, we double this parameter for one spring between
       each pair of them because the cloth will not be tight a lot. Also, for these longer bending springs, we decrease
       the spring coefficient more than usual because we need them to be looser in the cloth. As a result, the cloth
       will
       be bumpy in some small square areas, and it always keeps its form in different conditions.</p>
-    <p class="text-size">In the second type of cloth, we change to 0.7 the maximum length of the bending spring for
+    <p class="text-size">In <a
+        href="https://drive.google.com/file/d/16RBVn08e7w1tTWgwEUeoam2jTCKNg_8Z/view?usp=sharing">the second type of
+        cloth</a>, we change to 0.7 the maximum length of the bending spring for
       every 6-point mass in horizontal directions. It causes the cloth to have some wrinkles in the vertical
       direction.
       It is like a cloth that we have folded and ironed. To prevent the fabric from shrinking too much, we tripled the
       maximum length of the structural-type spring in some places horizontally and made the spring coefficient 10
       times
       weaker. In this type, we manipulate both structural and bending spring types.</p>
-    <p class="text-size">The third type of cloth is fancier. It is wavy in horizontal, but it is straight or changes
+    <p class="text-size"><a
+        href="https://drive.google.com/file/d/1FglrS8h8a4uZPufTCM1Pqcbjsz-ADJfF/view?usp=sharing">The third type of
+        cloth</a> is fancier. It is wavy in horizontal, but it is straight or changes
       the
       wave direction when more mass falls on it. We reach this type with a trick. First, we find each bending spring
       that has a sixth position in vertical and horizontal. Then, if it is a vertical spring, we decrease its max
       length
       to 0.8 of the default. ​It causes the cloth to be wavy but not forced in all places.</p>
-    <p class="text-size">We have also implemented uniform wind fields. Our implementation was motivated by the general
+    <p class="text-size">We have also implemented uniform wind fields. <a
+        href="https://drive.google.com/file/d/1f0_F-TwMcgwHxXzgLWFcqZJ86wyjJqw7/view?usp=sharing">(video)</a> Our
+      implementation was motivated by the general
       techniques described in a 1991 SIGGRAPH paper by Wejchert and Haumann titled “<a
         href="https://people.cs.clemson.edu/~dhouse/courses/817/papers/wejcherthaumann91.pdf">Animation
         Aerodynamics</a>”. To
